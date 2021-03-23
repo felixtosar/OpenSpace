@@ -1,0 +1,110 @@
+body{
+    background: black;
+
+}
+.space {
+    background-image: url("images/space.png");
+    background-repeat: repeat;
+    height: calc(100vh - 8px);
+    width: calc(70vw - 8px);
+    margin: auto;
+}
+.planet-area {
+    height: 80%;
+    width: 50%;
+    position: relative;
+    bottom: -20%;
+}
+.planet {
+    height: 60%;
+    width: 80%;
+    position: relative;
+    bottom: -40%;
+}
+.rocket {
+    height: 20%;
+    width: 20%;
+    position: absolute;
+    left: 40%;
+    bottom: 30%;
+    transform: rotate(20deg);
+}
+.control-panel {
+    width: 30%;
+    padding: 10px;
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    align-content:  center;
+    text-align: center;
+
+    background: repeating-linear-gradient(
+            45deg,
+            yellow,
+            yellow 10px,
+            black 10px,
+            black 20px
+    );
+}
+input[type=range][orient=vertical]
+{
+    writing-mode: bt-lr; /* IE */
+    -webkit-appearance: slider-vertical; /* WebKit */
+    width: 50%;
+    height: 50%;
+}
+
+input[type=password]
+{
+    width: 170px;
+    border-color: yellow;
+    border-radius: 25px;
+    background-color: #252424;
+    text-align: center;
+    color: yellow;
+}
+
+.check-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 5%;
+}
+
+.levers {
+    display: flex;
+    justify-content: space-around;
+}
+
+.control-panel__inner {
+    background-color: #252424;
+    padding: 20px;
+}
+
+.button-password-ok {
+    border-radius: 5px;
+    background-color: yellow;
+    font-weight : bold;
+    border-style: none;
+}
+
+.launch-btn{
+    background-color: red;
+    color: white;
+    border-color: white;
+    border-radius: 50%;
+    padding: 10px;
+
+}
+
+.launch-btn:disabled{
+    background-color: grey;
+    color: white;
+    border-color: white;
+    border-radius: 50%;
+    padding: 10px;
+
+}
+
+
+
+
